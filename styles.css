@@ -36,6 +36,10 @@ body{
     gap: 3rem;
     justify-content: center;
 }
+.cabecalho div {
+    text-align: center;
+}
+
 .menu-link{
     text-decoration: none;
     color: var(--claro);
@@ -219,3 +223,11 @@ h1{
         transform: translateY(-20px)
     }
 } 
+.link-projeto {
+    text-decoration: none; /* tira a linha */
+    color: white;          /* texto branco */
+}
+.link-projeto h3,
+.link-projeto p {
+    color: white;
+}

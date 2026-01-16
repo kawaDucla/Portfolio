@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Kawã Portfólio</title>
 </head>
+
 <body>
     <div class="particulas"></div>
-        <!-- <nav> = serve para criar um menu de navegação -->
+    <!-- <nav> = serve para criar um menu de navegação -->
     <nav class="navegacao">
         <!--<ul> = lista-->
         <ul class="menu">
@@ -32,41 +34,77 @@
         <div>
             <img src="./img/kawa.png" alt="Foto do kawa" class="foto-perfil">
             <h1>Kawã Ducla</h1>
-            <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+            <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
         </div>
     </main>
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus ad aperiam optio quos odit eveniet voluptates praesentium necessitatibus temporibus amet nihil ab in eos aspernatur commodi voluptatem, neque deleniti.
+                Sou desenvolvedor iniciante com formação técnica em Desenvolvimento de Sistemas e atualmente graduando
+                em Engenharia de Software. Tenho experiência no desenvolvimento de projetos frontend, utilizando HTML e
+                CSS, e backend, com Python e Flask, além de noções de APIs REST e bancos de dados.
+
+                Ao longo da minha formação, desenvolvi projetos como sites institucionais, sistemas de gerenciamento e
+                aplicações web, sempre buscando organização, clareza e boas práticas de programação.
+
+                Tenho interesse em aprender continuamente, evoluir tecnicamente e transformar ideias em soluções
+                funcionais. Atualmente, estou aprimorando meus conhecimentos em JavaScript, backend web e arquitetura de
+                software, com foco no crescimento profissional e na atuação em projetos reais.
+
+                Busco oportunidades para aplicar meus conhecimentos, ganhar experiência prática e evoluir como
+                desenvolvedor.
             </p>
         </div>
     </section>
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="./img/projeto1.png" alt="carro">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Loja de Carros</h3>
-                    <p class="paragrafo-projetos">Loja virtual moderna</p>
+            <a href="https://github.com/kawaDucla/site-for-ca-jovem-do-vasco" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/forca.webp" alt="carro">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Loja da força jovem</h3>
+                        <p class="paragrafo-projetos">Loja virtual moderna</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projetos-card">
-                <img src="./img/projeto2.png" alt="viagens">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Página de viagens</h3>
-                    <p class="paragrafo-projetos">Uma página interativa</p>
+            </a>
+            <a href="https://github.com/kawaDucla/Pokedex" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/pokemon.png" alt="carro">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Pokedex</h3>
+                        <p class="paragrafo-projetos">Pesquisa de pokemons da 1° e 2° geração</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projetos-card">
-                <img src="./img/projeto2.png" alt="Microsoft">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Microsoft</h3>
-                    <p class="paragrafo-projetos">Página da Microsoft criada para demonstrar</p>
+            </a>
+            <a href="https://github.com/kawaDucla/Gerenciamento-Biblioteca-Flask" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/bibliotea.png" alt="carro">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Loja da força jovem</h3>
+                        <p class="paragrafo-projetos">Loja virtual moderna</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+            <a href="https://github.com/kawaDucla/flask_senai" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/nova.png" alt="carro">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Lista de Contato </h3>
+                        <p class="paragrafo-projetos">Lista de contatos usando Flask</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/kawaDucla/Confeitaria" target="_blank" class="link-projeto">
+                <div class="projetos-card">
+                    <img src="./img/Captura de tela 2026-01-16 095349.png" alt="carro">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="info-projetos">Loja de confeitaria </h3>
+                        <p class="paragrafo-projetos">Confeitaria moderna</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
     <section id="contatos" class="contatos">
@@ -82,7 +120,7 @@
         </form>
     </section>
     <script>
-        function enviarWhats(event){
+        function enviarWhats(event) {
             event.preventDefault()
 
             const nome = document.getElementById('nome').value;
@@ -94,8 +132,9 @@
 
             const url = `https://wa.me/${telefone}?text=${msgFormatada}`
             console.log(url)
-            window.open(url,'_blank')
+            window.open(url, '_blank')
         }
     </script>
 </body>
+
 </html>
